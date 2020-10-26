@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.menu ul a {
+    text-decoration: none;
+    color: #696969;
+}
+.menu ul a:hover {
+    color: #adad90;
+    }
+.container {
+    width: 1370px;
+    margin: auto auto auto 0px;
+    height: 151px;
+}
+.menu {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.menu ul li {
+    text-align: center;
+    display: inline-block;
+    padding: 15px 30px;
+    }
+.menu img {
+    margin: 5px;
+    }
+.menu img:hover {
+    opacity: 0;
+ }
+.search{
+
+}
