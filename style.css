@@ -30,6 +30,6 @@
 .menu img:hover {
     opacity: 0;
  }
-.search{
-
+.search image{
+    height: 15px;
 }
