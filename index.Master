@@ -14,8 +14,23 @@
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                    <li><asp:LinkButton ID="lbTrangChu" runat="server">Trang Chu</asp:LinkButton></li>
+                    <li><asp:DropDownList ID="ddlSach" runat="server" ></asp:DropDownList></li>
+                    <li><asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/image/logo.jpg" Height="130px" Width="160px"/></li>
+                    <li><asp:LinkButton ID="lbGioiThieu" runat="server">Gioi Thieu</asp:LinkButton></li>
+                    <li><asp:LinkButton ID="lbTinTuc" runat="server">Tin Tuc</asp:LinkButton></li>
+                </ul>
+                </div>
+            </div>
+            <div class="slide">
+                
+            </div>
         </div>
     </form>
 </body>
 </html>
+
 
