@@ -12,7 +12,7 @@
 .container {
     width: 1370px;
     margin: auto auto auto 0px;
-    height: 151px;
+    height: 120px;
 }
 .menu {
     margin-top: 30px;
@@ -21,15 +21,53 @@
 }
 .menu ul li {
     text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
     display: inline-block;
     padding: 15px 30px;
-    }
+}
 .menu img {
     margin: 5px;
     }
 .menu img:hover {
     opacity: 0;
  }
-.search image{
-    height: 15px;
+.top{
+    background-color:deepskyblue;
+}
+.search {
+    position: absolute;
+}
+.search span {
+    background-color: chocolate;
+    height: 30px;
+    width: 30px;
+    }
+#imgSearch {
+    
+}
+#txtTimKiem {
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    transition: all .4s;
+}
+#btTimKiem {
+    height: 30px;
+    width: 80px;
+    background-color:chocolate;
+}
+#imgLogo{
+    height:130px;
+    width:160px;
+}
+.login {
+    margin-left: 1100px;
+    padding: 10px;
+    opacity: 1;
 }
