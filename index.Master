@@ -11,30 +11,30 @@
     <form id="form1" runat="server">
         <div>       
             <div class="top">
-        <div class="search">
-            <asp:Image ID="imgSearch" runat="server" ImageUrl="~/image/search_icon.png" />
-            <asp:TextBox ID="txtTimKiem" runat="server" Height="30px" Width="300px"></asp:TextBox>
-            <asp:Button ID="btTimKiem" runat="server" Text="Tim Kiem" Height="30px" Width="80px" />
+                <div class="search">
+                    <span><asp:Image ID="imgSearch" runat="server" ImageUrl="~/image/search_icon.png" /></span>                   
+                    <asp:TextBox ID="txtTimKiem" runat="server" placeholder="Tim kiem ..."></asp:TextBox>
+                    <asp:Button ID="btTimKiem" runat="server" Text="Tim Kiem" />
+                </div>
+            <div class="login">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
         </div>
-        <div class="login">
-             <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </div>
-            <div class="container">
-                <div class="menu">
-                    <ul>
+        <div class="container">
+             <div class="menu">
+                <ul>
                     <li><asp:LinkButton ID="lbTrangChu" runat="server">Trang Chu</asp:LinkButton></li>
                     <li><asp:DropDownList ID="ddlSach" runat="server" ></asp:DropDownList></li>
-                    <li><asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/image/logo.jpg" Height="130px" Width="160px"/></li>
+                    <li><asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/image/logo.jpg" /></li>
                     <li><asp:LinkButton ID="lbGioiThieu" runat="server">Gioi Thieu</asp:LinkButton></li>
                     <li><asp:LinkButton ID="lbTinTuc" runat="server">Tin Tuc</asp:LinkButton></li>
-                </ul>
-                </div>
+              </ul>
             </div>
-            <div class="slide">
-                
+        </div>
             </div>
+        <div class="slide">    
+           
         </div>
     </form>
 </body>
