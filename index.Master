@@ -11,30 +11,66 @@
     <form id="form1" runat="server">
         <div>       
             <div class="top">
-                <div class="search">
-                    <span><asp:Image ID="imgSearch" runat="server" ImageUrl="~/image/search_icon.png" /></span>                   
+                <div class="search">                                       
                     <asp:TextBox ID="txtTimKiem" runat="server" placeholder="Tim kiem ..."></asp:TextBox>
                     <asp:Button ID="btTimKiem" runat="server" Text="Tim Kiem" />
                 </div>
-            <div class="login">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
-                </asp:ContentPlaceHolder>
+                <div class="login">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
             </div>
-        </div>
-        <div class="container">
-             <div class="menu">
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li><asp:LinkButton ID="lbTrangChu" runat="server">Trang Chu</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="lbSach" runat="server">Sach</asp:LinkButton></li>
+                        <li><asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/image/logo.jpg" /></li>
+                        <li><asp:LinkButton ID="lbGioiThieu" runat="server">Gioi Thieu</asp:LinkButton></li>
+                        <li><asp:HyperLink ID="hpTinTuc" runat="server" NavigateUrl="https://nxbkimdong.com.vn/tin-tuc/hoat-dong">Tin tuc</asp:HyperLink></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                <asp:ImageButton ID="imgBanner1" runat="server" ImageUrl="~/image/bnhome.jpg"/>
+                <asp:ImageButton ID="imgBanner2" runat="server" ImageUrl="~/image/tucuonsachnho2_0.jpg" />
+            </div>
+            <div class="sachhot">
+                <asp:LinkButton ID="lbSachhot" runat="server">Sach hot</asp:LinkButton>
                 <ul>
-                    <li><asp:LinkButton ID="lbTrangChu" runat="server">Trang Chu</asp:LinkButton></li>
-                    <li><asp:DropDownList ID="ddlSach" runat="server" ></asp:DropDownList></li>
-                    <li><asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/image/logo.jpg" /></li>
-                    <li><asp:LinkButton ID="lbGioiThieu" runat="server">Gioi Thieu</asp:LinkButton></li>
-                    <li><asp:LinkButton ID="lbTinTuc" runat="server">Tin Tuc</asp:LinkButton></li>
-              </ul>
+                    <li class="Sach1">
+                        <asp:ImageButton ID="imgSach1" runat="server" ImageUrl="~/image/de-men-phieu-luu-ky_ki-niem.jpg"/>
+                    </li>
+                    <li class="Sach2">
+                        <asp:ImageButton ID="imgSach2" runat="server" ImageUrl="~/image/hanh-lang-u-toi_bia-1.jpg"/>
+                    </li>
+                    <li class="Sach3">
+                        <asp:ImageButton ID="imgSach3" runat="server" ImageUrl="~/image/giai-quyet-nhung-tro-ngai-trong-hoc-tap.jpg"/>
+                    </li>                                                                     
+                </ul>
+                <br /><asp:LinkButton ID="lbAllhot" runat="server">Xem tat ca</asp:LinkButton>
             </div>
-        </div>
+            <div class="banner">
+                <asp:ImageButton ID="imgBanner3" runat="server" ImageUrl="~/image/tapchitgtt.jpg" />
             </div>
-        <div class="slide">    
-           
+            <div class="sachmoi">
+                <asp:LinkButton ID="lbSachmoi" runat="server">Sach moi</asp:LinkButton>
+                <ul>
+                    <li class="Sach4">
+                        <asp:ImageButton ID="imgSach4" runat="server" ImageUrl="~/image/de-men-phieu-luu-ky_ki-niem.jpg"/>
+                    </li>
+                    <li class="Sach5">
+                        <asp:ImageButton ID="imgSach5" runat="server" ImageUrl="~/image/hanh-lang-u-toi_bia-1.jpg"/>
+                    </li>
+                    <li class="Sach6">
+                        <asp:ImageButton ID="imgSach6" runat="server" ImageUrl="~/image/giai-quyet-nhung-tro-ngai-trong-hoc-tap.jpg"/>
+                    </li>                                                                     
+                </ul>
+                <br /><asp:LinkButton ID="lbAllmoi" runat="server">Xem tat ca</asp:LinkButton>
+            </div>
+            <div class="banner">
+                <asp:ImageButton ID="imgBanner4" runat="server" ImageUrl="~/image/doremon.jpg" />
+            </div>
         </div>
     </form>
 </body>
