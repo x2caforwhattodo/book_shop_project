@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.container {
+    width: 1180px;
+    margin: auto;
+    height: 170px;
+}
+
+.menu {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+    .menu ul a {
+        text-decoration: none;
+        color: #696969;
+    }
+
+        .menu ul a:hover {
+            color: #adad90;
+        }
+
+    .menu ul li {
+        text-align: center;
+        display: inline-block;
+        padding: 15px 30px;
+    }
+
+    .menu img {
+        margin: 5px;
+    }
+
+        .menu img:hover {
+            opacity: 0;
+        }
+
+.top {
+    background-color: deepskyblue;
+}
+
+.search {
+    position: absolute;
+}
+
+    .search span {
+        background-color: chocolate;
+        height: 30px;
+        width: 30px;
+    }
+
+
+#txtTimKiem {
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    transition: all .4s;
+}
+
+#btTimKiem {
+    height: 30px;
+    width: 80px;
+    background-color: chocolate;
+}
+
+#imgLogo {
+    height: 130px;
+    width: 160px;
+}
+
+.login {
+    margin-left: 1100px;
+    padding: 10px;
+    opacity: 1;
+}
+
+#lbTrangChu {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    #lbTrangChu:hover {
+        color: red;
+    }
+
+#lbSach {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    #lbSach:hover {
+        color: red;
+    }
+
+#lbGioiThieu {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    #lbGioiThieu:hover {
+        color: red;
+    }
+
+#hpTinTuc {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    #hpTinTuc:hover {
+        color: red;
+    }
+
+#imgBanner1 {
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+}
+
+#imgBanner2 {
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+}
