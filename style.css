@@ -442,6 +442,86 @@ body {
 
 
 
+.sp{
+    position:relative;
+    list-style: none;
+}
+.sp1{
+    margin-top: 5%;
+    position:absolute;
+    margin-left: 25%;
+}
+.sp2 {
+    margin-top: 5%;
+    position: absolute;
+    margin-left: 60%;
+}
+
+#ttsp1{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+#ttsp1 p{
+    color: black;
+}
+#ttsp1 p:hover {
+    color: red;
+}
+
+#ttsp2 {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+#ttsp2 p {
+    color: black;
+}
+
+#ttsp2 p:hover {
+    color: red;
+}
+
+
+#ttsp3 {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+#ttsp3 p {
+    color: black;
+}
+
+#ttsp3 p:hover {
+    color: red;
+}
+
+#ttsp4 {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+#ttsp4 p {
+    color: black;
+}
+#ttsp4 p:hover {
+    color: red;
+}
+
 
 
 
