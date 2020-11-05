@@ -1,15 +1,16 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="bookShopProject.index" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="database.Site1" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Hiệu Sách ManGa</title>
     <link href="style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>       
+    <form id="form1" runat="server">     
             <div class="top">
                 <div class="search">                                       
                     <asp:TextBox ID="txtTimKiem" runat="server" placeholder="Tim kiem ..."></asp:TextBox>
@@ -22,56 +23,170 @@
             </div>
             <div class="container">
                 <div class="menu">
-                    <ul>
-                        <li><asp:LinkButton ID="lbTrangChu" runat="server">Trang Chu</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="lbSach" runat="server">Sach</asp:LinkButton></li>
-                        <li><asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/image/logo.jpg" /></li>
-                        <li><asp:LinkButton ID="lbGioiThieu" runat="server">Gioi Thieu</asp:LinkButton></li>
-                        <li><asp:HyperLink ID="hpTinTuc" runat="server" NavigateUrl="https://nxbkimdong.com.vn/tin-tuc/hoat-dong">Tin tuc</asp:HyperLink></li>
+                    <ul class="nd">
+                        <li><asp:LinkButton ID="lbTrangChu" runat="server">TRANG CHỦ</asp:LinkButton></li>
+                        <li><asp:LinkButton ID="lbSach" runat="server">SÁCH</asp:LinkButton></li>
+                        <li><asp:ImageButton ID="imgLogo" runat="server" ImageUrl="~/img/logo.png" /></li>
+                        <li><asp:LinkButton ID="lbGioiThieu" runat="server">GIỚI THIỆU</asp:LinkButton></li>
+                        <li><asp:HyperLink ID="hpTinTuc" runat="server" NavigateUrl="https://nxbkimdong.com.vn/tin-tuc/hoat-dong">TIN TỨC</asp:HyperLink></li>
                     </ul>
                 </div>
             </div>
             <div class="banner">
-                <asp:ImageButton ID="imgBanner1" runat="server" ImageUrl="~/image/bnhome.jpg"/>
-                <asp:ImageButton ID="imgBanner2" runat="server" ImageUrl="~/image/tucuonsachnho2_0.jpg" />
+                <asp:ImageButton ID="imgBanner1" runat="server" ImageUrl="~/img/bnhome.jpg"/>
+                <asp:ImageButton ID="imgBanner2" runat="server" ImageUrl="~/img/3.png" />
             </div>
             <div class="sachhot">
-                <asp:LinkButton ID="lbSachhot" runat="server">Sach hot</asp:LinkButton>
+                <asp:LinkButton ID="lbSachhot" runat="server">SÁCH HOT</asp:LinkButton>
                 <ul>
                     <li class="Sach1">
-                        <asp:ImageButton ID="imgSach1" runat="server" ImageUrl="~/image/de-men-phieu-luu-ky_ki-niem.jpg"/>
+                        <asp:ImageButton ID="imgSach1" runat="server" ImageUrl="~/img/demen.png"/>
+                        <div ID="thongtin1">
+                            <p>Dế mèn phiêu lưu ký</p>
+                            <h4>Tô Hoài</h4>
+                            <h6>15.000 VNĐ</h6>
+                        </div>
                     </li>
                     <li class="Sach2">
-                        <asp:ImageButton ID="imgSach2" runat="server" ImageUrl="~/image/hanh-lang-u-toi_bia-1.jpg"/>
+                        <asp:ImageButton ID="imgSach2" runat="server" ImageUrl="~/img/5.jpg"/>
+                        <div id="thongtin2">
+                           <p>Hành Lang U Tối</p>
+                           <h4>Lois Duncan</h4>
+                           <h6>15.000 VNĐ</h6>
+                        </div>
                     </li>
                     <li class="Sach3">
-                        <asp:ImageButton ID="imgSach3" runat="server" ImageUrl="~/image/giai-quyet-nhung-tro-ngai-trong-hoc-tap.jpg"/>
-                    </li>                                                                     
+                        <asp:ImageButton ID="imgSach3" runat="server" ImageUrl="~/img/4.jpg"/>
+                        <div id="thongtin3">
+                           <p>Giải Quyết Trở Ngại</p>
+                           <h4>Ikesuke shota</h4>
+                           <h6>15.000 VNĐ</h6>
+                        </div>
+                    </li>
                 </ul>
-                <br /><asp:LinkButton ID="lbAllhot" runat="server">Xem tat ca</asp:LinkButton>
+                <br />
+                <asp:LinkButton ID="lbAllhot" runat="server">Xem Tất Cả-->></asp:LinkButton>
             </div>
+
             <div class="banner">
-                <asp:ImageButton ID="imgBanner3" runat="server" ImageUrl="~/image/tapchitgtt.jpg" />
+                <asp:ImageButton ID="imgBanner3" runat="server" ImageUrl="~/img/2.png" />
             </div>
+
             <div class="sachmoi">
-                <asp:LinkButton ID="lbSachmoi" runat="server">Sach moi</asp:LinkButton>
+                <asp:LinkButton ID="lbSachmoi" runat="server">SÁCH MỚI</asp:LinkButton>
                 <ul>
                     <li class="Sach4">
-                        <asp:ImageButton ID="imgSach4" runat="server" ImageUrl="~/image/de-men-phieu-luu-ky_ki-niem.jpg"/>
+                        <asp:ImageButton ID="imgSach4" runat="server" ImageUrl="~/img/demen.png"/>
+                       <div id="thongtin4">
+                           <p>Giải Quyết Trở Ngại</p>
+                           <h4>Ikesuke shota</h4>
+                           <h6>15.000 VNĐ</h6>
+                        </div>
                     </li>
                     <li class="Sach5">
-                        <asp:ImageButton ID="imgSach5" runat="server" ImageUrl="~/image/hanh-lang-u-toi_bia-1.jpg"/>
+                        <asp:ImageButton ID="imgSach5" runat="server" ImageUrl="~/img/5.jpg"/>
+                        <div id="thongtin5">
+                           <p>Giải Quyết Trở Ngại</p>
+                           <h4>Ikesuke shota</h4>
+                           <h6>15.000 VNĐ</h6>
+                        </div>
                     </li>
                     <li class="Sach6">
-                        <asp:ImageButton ID="imgSach6" runat="server" ImageUrl="~/image/giai-quyet-nhung-tro-ngai-trong-hoc-tap.jpg"/>
+                        <asp:ImageButton ID="imgSach6" runat="server" ImageUrl="~/img/4.jpg"/>
+                        <div id="thongtin6">
+                           <p>Giải Quyết Trở Ngại</p>
+                           <h4>Ikesuke shota</h4>
+                           <h6>15.000 VNĐ</h6>
+                        </div>
                     </li>                                                                     
                 </ul>
-                <br /><asp:LinkButton ID="lbAllmoi" runat="server">Xem tat ca</asp:LinkButton>
+                <br /><asp:LinkButton ID="lbAllmoi" runat="server">Xem Tất Cả-->></asp:LinkButton>
             </div>
             <div class="banner">
-                <asp:ImageButton ID="imgBanner4" runat="server" ImageUrl="~/image/doremon.jpg" />
+                <asp:ImageButton ID="imgBanner4" runat="server" ImageUrl="~/img/sanphamdonghanh.png" />
+            </div>
+            <div class="sanpham">
+                <asp:LinkButton ID="shop" runat="server">SHOP NOW</asp:LinkButton>
+                <ul class="sp">
+                    <li class="sp1">
+                        <asp:Image ID="img1"  runat="server" ImageUrl="~/img/mockhoa1.jpg" />
+                        <div id="ttsp1">
+                            <p>Dragon Ball Z 2016</p>
+                            <h5>15.000 VNĐ</h5>
+                        </div>
+                    </li>
+                    <li class="sp2">
+                        <asp:Image ID="img2"  runat="server" ImageUrl="~/img/mockhoa.jpg" />
+                        <div id="ttsp2">
+                            <p>Dragon Ball Z 2016</p>
+                            <h5>15.000 VNĐ</h5>
+                        </div>
+                    </li>
+                    <li class="sp3">
+                        <asp:Image ID="img3"  runat="server" ImageUrl="~/img/mockhoa1.jpg" />
+                        <div id="ttsp3">
+                            <p>Dragon Ball Z 2016</p>
+                            <h5>15.000 VNĐ</h5>
+                        </div>
+                    </li>
+                    <li class="sp4">
+                        <asp:Image ID="img4"  runat="server" ImageUrl="~/img/mockhoa.jpg" />
+                        <div id="ttsp4">
+                            <p>Dragon Ball Z 2016</p>
+                            <h5>15.000 VNĐ</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h1 class="logo-text"><span>Chủ Đề </span> Hiệu Sách Manga</h1>
+                    <p>
+                        Hỗ trợ tìm kiếm thông tin mọi loại sách, <br /> hay nhất trong ngày.
+                    </p>
+                    <div class="contact">
+                        <span>123-456-455</span>
+                        <span>manga@gmail.com</span>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Thể Loại</h2>
+                    <br>
+                    <ul>
+                        <asp:HyperLink ID="HyperLink1" runat="server">
+                            <li>Anime - ManGa</li>
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink2" runat="server">
+                            <li>Sách Khoa Học</li>
+                        </asp:HyperLink>
+                         <asp:HyperLink ID="HyperLink3" runat="server">
+                            <li>Sách Thiếu Nhi</li>
+                        </asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink4" runat="server">
+                            <li>Truyên Tranh</li>
+                        </asp:HyperLink>
+                         <asp:HyperLink ID="HyperLink5" runat="server">
+                            <li>Thông Tin Vật Phẩm</li>
+                        </asp:HyperLink>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Liên Hệ Nhà Sách</h2>
+                    <br>
+                    <form method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="Your email dress..."><br>
+                        <input type="password" name="password" class="text-input contact-input" placeholder="Your password..."> <br>
+                        <div class="btn"> SEND</div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; MangaToon.com | Degisn by Nhóm TPM3
             </div>
         </div>
+
     </form>
 </body>
 </html>
